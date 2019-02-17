@@ -32,8 +32,9 @@ set relativenumber
 
 let mapleader=","
 inoremap jk <ESC>
-nnoremap <leader>ev :vsp ~/dotfiles/vimrc<CR>
-nnoremap <leader>sv :source ~/dotfiles/vimrc<CR>
+inoremap <ESC> <nop>
+nnoremap <leader>ev :vsp ~/dotfiles/vim/vimrc<CR>
+nnoremap <leader>sv :source ~/dotfiles/vim/vimrc<CR>
 nnoremap <leader><space> :nohlsearch<CR>
 
 " CtrlP settings
