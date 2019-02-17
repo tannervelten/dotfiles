@@ -15,7 +15,6 @@ set smarttab
 set number
 set showcmd
 set cursorline
-set wildmenu
 set lazyredraw
 set showmatch
 set ruler
@@ -28,6 +27,14 @@ set backspace=indent,eol,start
 set wrap
 set linebreak
 set relativenumber
+
+" Mappings
+
+let mapleader=","
+inoremap jk <ESC>
+nnoremap <leader>ev :vsp ~/dotfiles/vimrc<CR>
+nnoremap <leader>sv :source ~/dotfiles/vimrc<CR>
+nnoremap <leader><space> :nohlsearch<CR>
 
 " Don't use arrows
 
