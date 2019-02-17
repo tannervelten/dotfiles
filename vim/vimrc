@@ -28,21 +28,20 @@ set wrap
 set linebreak
 set relativenumber
 
-" Mappings
+" Mappings test
 
 let mapleader=","
 inoremap jk <ESC>
-inoremap <ESC> <nop>
 nnoremap <leader>ev :vsp ~/dotfiles/vim/vimrc<CR>
-nnoremap <leader>sv :source ~/dotfiles/vim/vimrc<CR>
 nnoremap <leader><space> :nohlsearch<CR>
+inoremap {<CR> {<CR>}<C-o>O
 
 " CtrlP settings
 let g:ctrlp_match_window='bottom,order:ttb'
 let g:ctrlp_switch_buffer=0
 let g:ctrlp_working_path_mode=0
 
-" Don't use arrows
+" Training wheels
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -52,3 +51,4 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+inoremap <ESC> <nop>
