@@ -36,6 +36,11 @@ nnoremap <leader>ev :vsp ~/dotfiles/vimrc<CR>
 nnoremap <leader>sv :source ~/dotfiles/vimrc<CR>
 nnoremap <leader><space> :nohlsearch<CR>
 
+" CtrlP settings
+let g:ctrlp_match_window='bottom,order:ttb'
+let g:ctrlp_switch_buffer=0
+let g:ctrlp_working_path_mode=0
+
 " Don't use arrows
 
 nnoremap <up> <nop>
