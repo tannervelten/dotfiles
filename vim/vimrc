@@ -5,6 +5,7 @@ syntax enable
 
 " Basic settings
 
+filetype plugin indent on
 set encoding=utf-8
 set tabstop=2
 set softtabstop=2
