@@ -1,3 +1,6 @@
 [submodule "vim/pack/tannervelten/start/sensible"]
 	path = vim/pack/tannervelten/start/sensible
 	url = https://tpope.io/vim/sensible.git
+[submodule "zsh/plugins/oh-my-zsh"]
+	path = zsh/plugins/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
