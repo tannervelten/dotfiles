@@ -1,6 +1,5 @@
 set packpath^=~/dotfiles/vim
 
-colorscheme badwolf
 syntax enable
 
 " Basic settings
