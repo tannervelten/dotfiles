@@ -62,7 +62,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  vi-mode
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,7 +109,6 @@ zle -N up_widget
 bindkey "^k" up_widget
 
 function c() {
-  cd $1;
-  ls;
+  builtin cd "$@" && ls
 }
 alias cd="c"
