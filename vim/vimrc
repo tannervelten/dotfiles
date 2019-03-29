@@ -1,6 +1,18 @@
+" Vimrc
+"
+" This file contains the minimal settings to set the foundation, with the
+" majority of the configuration and settings living in files spread between
+" vim/rcfiles and vim/rcplugins
+
+set nocompatible
+
+" Need to set the leader before defining any leader mappings
+let mapleader = "\<Space>"
+
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 syntax enable
@@ -33,7 +45,7 @@ set relativenumber
 
 " Mappings test
 
-let mapleader=","
+" let mapleader=","
 inoremap jk <ESC>
 nnoremap <leader>ev :vsp ~/dotfiles/vim/vimrc<CR>
 nnoremap <leader><space> :nohlsearch<CR>
