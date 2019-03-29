@@ -1,20 +1,3 @@
-" Vimrc
-"
-" This file contains the minimal settings to set the foundation, with the
-" majority of the configuration and settings living in files spread between
-" vim/rcfiles and vim/rcplugins
-
-set nocompatible
-
-" Need to set the leader before defining any leader mappings
-let mapleader = "\<Space>"
-
-call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-call plug#end()
-
 " General Vim Settings
 " --------------------
 
@@ -23,7 +6,7 @@ set encoding=utf-8
 syntax enable
 
 set backspace=2  " backspace works like most programs in insert mode
-set history=1000
+set history=50
 set ruler        " show the cursor position at all times
 set showcmd      " display incomplete commands
 set incsearch    " incremental searching
@@ -31,13 +14,13 @@ set hlsearch     " highlight all search matches
 set cursorline
 set lazyredraw   " no screen redraw while executing macros
 set autoread
-set autowrite    " auto write contents of file before running commands
+set autowrite    " auto write contents of file before commands
 set scrolloff=5
 set visualbell   " use visual bell instead of beeping
 set wrap         " wrap lines longer than window
 set laststatus=2 " always display status line
 
-" Tabs and Indentation
+" Tabs and indentation
 set tabstop=2
 set shiftwidth=2
 set shiftround    " round indent to multiple of shiftwidth
@@ -49,22 +32,3 @@ set autoindent    " copy indent from current line when starting new line
 " Relative line numbers, absolute current line
 set number
 set relativenumber
-
-" Mappings test
-
-inoremap jk <ESC>
-nnoremap <leader>ev :vsp ~/dotfiles/vim/vimrc<CR>
-nnoremap <leader><space> :nohlsearch<CR>
-inoremap {<CR> {<CR>}<C-o>O
-
-" Training wheels
-
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-inoremap <ESC> <nop>
