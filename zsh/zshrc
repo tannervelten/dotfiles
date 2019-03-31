@@ -17,16 +17,6 @@ if ! zplug check --verbose; then
   fi
 fi
 
-# Custom
-
-function up_widget() {
-  BUFFER="cd .."
-  zle accept-line
-}
-zle -N up_widget
-bindkey "^k" up_widget
-
-function c() {
-  builtin cd "$@" && ls
-}
-alias cd="c"
+for zsh_source in $HOME/dotfiles/zsh/configs/*.zsh; do
+  source $zsh_source
+done
